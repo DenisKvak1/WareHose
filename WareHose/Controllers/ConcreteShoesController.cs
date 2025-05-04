@@ -7,7 +7,7 @@ using WareHose.DTO;
 
 namespace WareHose.Controllers;
 
-public class ConcreteShoesController : ApiController<IConcreteShoesRepository, ConcreteShoes>
+public class ConcreteShoesController : CrudApiController<IConcreteShoesRepository, ConcreteShoes>
 {
     private GetShoesPlacement _getShoesPlacement;
 

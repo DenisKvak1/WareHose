@@ -1,19 +1,20 @@
 ﻿using BLL;
+using Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Migrations;
+using WareHose.Controllers.Generic;
 using WareHose.DTO;
 
 namespace WareHose.Controllers;
 
-[ApiController]
-[Route("api/[controller]")]
-[Authorize]
-public class TransferController : ControllerBase
+
+public class TransferController : ReadApiController<ITransferRepository, Transfer>
 {
     private TransferShoes _transferShoes;
     private LocalTransferShoes _transferShoesLocal;
 
-    public TransferController(TransferShoes transferShoes, LocalTransferShoes transferShoesLocal)
+    public TransferController(TransferShoes transferShoes, LocalTransferShoes transferShoesLocal, ITransferRepository transferRepository) : base(transferRepository)
     {
         _transferShoes = transferShoes;
         _transferShoesLocal = transferShoesLocal;

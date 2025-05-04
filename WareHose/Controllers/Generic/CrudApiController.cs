@@ -7,13 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 [ApiController]
 [Authorize]
 [Route("api/[controller]")]
-public class ApiController<TRepository, TEntity> : ControllerBase
+public class CrudApiController<TRepository, TEntity> : ControllerBase
     where TRepository : IDbRepository<TEntity>
     where TEntity : class, IDbEntity
 {
     protected readonly TRepository _repository;
 
-    public ApiController(TRepository repository)
+    public CrudApiController(TRepository repository)
     {
         _repository = repository;
     }

@@ -7,7 +7,7 @@ using WareHose.DTO;
 
 namespace WareHose.Controllers;
 
-public class WareHouseController : ApiController<IWareHouseRepository, WareHouse>
+public class WareHouseController : CrudApiController<IWareHouseRepository, WareHouse>
 {
     private ReceiveAndPlaceShoes _receiveAndPlaceShoes;
     private SellAndTakeShoes _sellAndTakeShoes;
