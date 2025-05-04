@@ -33,10 +33,4 @@
 
 - ASP.NET Core
 - Entity Framework Core
-- SQL Server
-
-## Запуск
-
-```bash
-dotnet ef database update
-dotnet run --project WareHouse.API
+- SQL Lite
