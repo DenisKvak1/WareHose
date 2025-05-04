@@ -34,3 +34,5 @@
 - ASP.NET Core
 - Entity Framework Core
 - SQL Lite
+
+- P.S мой первый проект на ASP.NET CORE
