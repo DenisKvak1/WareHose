@@ -1,0 +1,42 @@
+# .NET Core  .NET 5+  ASP.NET
+bin
+obj
+
+# User-specific files
+.idea
+.vscode
+
+# Windows Installer files
+.cab
+.msi
+.msm
+.msp
+
+# Windows Installer files (For VS2019 and newer)
+.vs2019
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# .NET Core Debug folder
+.vscode
+
+# User-specific files
+.DS_Store
+Thumbs.db
+
+# JetBrains Rider
+.idea
+
+# User-specific files
+.vs
+.vs2017
+.vs2019
+.vs2019_config
+
+# .NET build logs
+.log
+
+# ASP.NET
+appsettings.json
+appsettings.Development.json
